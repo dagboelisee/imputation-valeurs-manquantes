@@ -1,0 +1,501 @@
+Age,Niveau_Education,Statut_Emploi,Revenu_Mensuel,Depenses_Mensuelles,Epargne,Type_Pret,Montant_Pret,Duree_Pret_Mois,Mensualite_Pret,Taux_Interet_Pret_Pct,Score_Credit,Region
+27,Master,Employé,NA,2507.39,NA,Immobilier,NA, 12,12753.87,NA,NA,Asie
+23,Master,Employé,5576.78,4137.21, 429039.84,Business,384763.76, 60, 7960.94, 8.86,NA,Europe
+28,Licence,Employé,3902.42,1858.72, 102629.59,Education,288658.29,300, 4586.28,18.89,757,Europe
+42,Licence,Employé,3947.25,NA, 339645.05,Education,155677.67,300, 3188.40,24.52,673,Amérique_Nord
+50,Licence,Employé,7480.76,2688.64,NA,NA,212943.79,300, 3915.59,21.97,348,Afrique
+67,Doctorat,Employé,4705.62,2460.72, 176395.02,Education,397944.83, 24,19427.62,15.70,321,Afrique
+65,Secondaire,NA,2556.42,1911.31, 238302.73,Education,NA, 60,10319.30,24.15,NA,Afrique
+26,Licence,Employé,4084.31,2825.52, 317897.17,Automobile, 73121.55,180,  947.89,13.47,382,Asie
+66,Licence,Entrepreneur,4134.30,3554.32, 438232.62,Immobilier, 95369.25,180,  780.26,NA,717,Asie
+32,Secondaire,Entrepreneur,2578.95,1036.44, 228443.25,NA,215473.83, 12,19640.99,16.89,781,Europe
+41,Master,Employé,4351.17,2891.98, 451929.88,Immobilier, 42993.17, 60, 1158.28,20.80,658,Asie
+38,Master,Entrepreneur,4492.93,1765.21, 501749.36,Business,328454.96,NA,NA,25.89,612,Asie
+52,Master,Employé,5411.58,NA,  31066.07,Business,262283.78,300, 2643.05,11.38,350,Europe
+19,Doctorat,Employé,4688.33,2018.52, 509660.07,Immobilier,202762.27, 36, 8554.36,29.52,365,Amérique_Nord
+28,Master,Étudiant,1739.27,NA, 154783.52,Automobile,179176.73,120, 1936.56, 5.41,372,Amérique_Nord
+45,Licence,Employé,NA,2505.59,  40774.86,Business,311728.76,240, 3734.61,13.37,719,Afrique
+NA,Master,Entrepreneur,4628.74,2450.16, 190550.93,Education,368063.01,300, 2039.55,NA,705,Europe
+56,Licence,Sans_Emploi,2738.03,1045.13, 169719.37,NA,NA,300,NA, 3.77,703,Asie
+54,Master,Sans_Emploi,4792.56,2080.44, 329954.10,Business,339315.81,360,NA,16.40,777,Afrique
+NA,Licence,NA,2950.08,1048.48,NA,Business, 94168.61,NA,NA,29.25,302,Amérique_Nord
+67,NA,Entrepreneur,NA,3301.15,1041720.87,Business, 74937.98,NA,NA,24.62,NA,Asie
+60,Master,Sans_Emploi,4716.99,4024.41,  84545.11,Immobilier,311957.72,300, 3501.94,12.93,NA,Afrique
+43,Secondaire,Employé,1418.46, 909.58,  77234.56,Immobilier,NA,240, 1199.37,16.76,575,Afrique
+52,Licence,Employé,3722.89,1988.39, 174144.71,Automobile,NA,240,NA,21.02,382,Amérique_Nord
+33,Licence,NA,3268.27,2343.22, 288709.95,Business,143326.40,360, 1421.54,NA,391,Europe
+NA,Master,NA,3396.90,1139.06, 264871.38,NA,437504.66, 24,19647.77, 7.30,802,Europe
+26,Master,NA,7491.39,NA, 550119.88,Business,161398.92,180, 2595.72,17.97,628,Afrique
+NA,Master,NA, 692.34,NA,NA,Immobilier,473473.02,180,NA,22.28,638,Asie
+NA,Secondaire,Employé,5882.22,NA,NA,Immobilier,  5952.76,120,   89.80,13.26,641,Europe
+48,Secondaire,Étudiant,NA,1410.24, 121582.18,NA,459267.52,NA, 2915.48,NA,626,Afrique
+59,Licence,Sans_Emploi,3458.64,1868.85,NA,Business,384105.86, 12,NA, 5.82,NA,Europe
+60,Secondaire,NA,1695.53,1033.64,NA,NA,358667.64, 12,31254.69, 8.33,383,Afrique
+NA,NA,Employé,NA, 870.70,  32681.28,Business,445299.16, 60,12011.80,20.86,542,Amérique_Nord
+37,Licence,Employé,NA,NA, 174485.80,Immobilier,236415.74,180, 5109.31,NA,NA,Amérique_Nord
+32,Master,Employé,5214.89,3842.48,NA,Automobile,371080.23,180, 8152.56,NA,812,Amérique_Nord
+65,Licence,NA,2414.74,1192.38, 140602.34,Education,NA,300,  400.58, 4.43,694,Europe
+32,Licence,Entrepreneur,5420.73,3070.15, 531321.87,Education,344395.35,360, 8470.60,29.51,505,Europe
+26,Licence,Employé,4247.88,2759.77, 282190.55,Automobile,NA,360,NA,NA,695,Afrique
+57,Licence,Entrepreneur,6206.07,3849.56, 164214.24,Education,373517.02,240, 8964.11,28.70,517,Afrique
+31,Licence,Employé,NA,2019.68, 136044.39,Immobilier,NA,NA, 3449.80,NA,624,Amérique_Nord
+25,Licence,Sans_Emploi, 872.91, 273.62,NA,Immobilier,NA, 60,  540.94,27.40,618,Europe
+40,Licence,Étudiant, 500.00, 421.54,  55533.39,Business, 36308.86, 24, 1630.09, 7.27,766,Amérique_Nord
+NA,Master,Employé,2068.49, 840.08,  64320.22,NA, 52577.84,240, 1072.59,24.28,400,Europe
+NA,Licence,Étudiant,3137.39,NA, 289248.64,Immobilier,NA, 36, 8918.56,11.84,804,Amérique_Nord
+39,Autre,NA,4478.94,2878.97,NA,Education,389220.80,NA,NA,28.28,458,Amérique_Nord
+NA,Licence,NA,1980.63,1271.34, 140008.25,Business,337606.38,360,NA,NA,457,Europe
+43,Licence,NA,2857.29,NA, 318966.89,NA,171067.87,120, 4194.60,27.48,306,Asie
+NA,Secondaire,Entrepreneur,7004.94,3994.98, 369640.35,Immobilier,339748.60,NA,16434.56,14.76,805,Amérique_Nord
+62,Secondaire,Entrepreneur,2648.82,1491.69,NA,Automobile,131786.31, 24, 6843.34,22.10,438,Europe
+24,Master,Employé,NA,1377.41,NA,Education,353860.15,NA,NA, 6.28,559,Afrique
+21,Master,Employé, 500.00, 237.55,  40103.71,Education,185665.50, 24, 8793.77,12.62,423,Afrique
+32,Licence,Employé,4057.73,1986.13,  78332.38,Automobile,437688.08, 60, 8080.46,NA,714,Afrique
+40,Licence,Entrepreneur,2130.10, 652.11,NA,Immobilier,233267.40,NA,10576.67, 8.25,765,Amérique_Nord
+65,Licence,Employé,3318.03,NA,NA,Education,476088.13, 24,21229.47,NA,563,Asie
+NA,Doctorat,Employé,5597.10,4098.68, 451196.48,Education,166821.10, 36,NA,26.23,802,Afrique
+52,Secondaire,Sans_Emploi,4062.17,2696.68,NA,Education,477856.58,240,NA,NA,546,Amérique_Nord
+51,Master,NA,2459.72,1978.77,  21579.38,Automobile,485963.80,120, 5981.16, 8.33,449,Amérique_Nord
+65,Licence,Employé,2636.11,1571.58, 155241.79,Immobilier,231246.02,NA, 9404.73,26.71,844,Amérique_Nord
+61,NA,Entrepreneur,1355.26, 677.49,NA,NA,NA,NA,29410.88,15.37,620,Asie
+41,Licence,Étudiant,NA, 543.09,  46941.73,Automobile,112906.10,NA, 2043.83,21.62,NA,Afrique
+50,Master,NA,NA,3277.79,NA,Business,195799.72,NA, 3061.34,14.18,814,Asie
+18,Licence,Sans_Emploi,5508.13,3119.26,  99970.65,Education,391364.01, 24,19387.55,17.20,767,Amérique_Nord
+NA,NA,Sans_Emploi,4858.32,1943.21, 547096.21,Immobilier, 96534.44,180, 1770.78,21.05,412,Europe
+48,Secondaire,Employé,3720.53,2373.69, 134580.45,Business,NA,360, 2789.89, 9.42,546,Europe
+42,Licence,Employé,NA,NA, 257609.28,NA,372844.57,180, 5447.40,15.89,507,Amérique_Nord
+38,Licence,NA,2784.76,1919.02,  32887.27,Immobilier,213693.42,NA,NA, 6.92,682,Amérique_Nord
+43,Licence,Employé,NA, 823.80, 293981.89,NA, 68116.42,120, 1122.85,NA,584,Asie
+40,Licence,Employé,3555.49,2824.41,NA,Business,285641.91,300, 4949.66,20.67,765,Asie
+52,Licence,Employé,3605.59,2794.48, 141284.58,Immobilier,329282.85, 60, 9705.47,25.21,705,Asie
+NA,Master,NA,3984.51,3562.20, 383160.90,Business,416269.19, 12,37616.95,15.23,NA,Asie
+34,Master,NA,2244.18, 710.96,NA,Immobilier,133094.84,300, 2410.37,21.63,NA,Europe
+38,Licence,Étudiant,3784.94,2325.00,  66748.52,Automobile,425445.20,NA, 5338.20,12.84,640,Europe
+68,Secondaire,Employé,2992.25,2567.57,  22466.03,Immobilier, 37053.80, 36, 1475.61,25.12,532,Afrique
+28,Master,Entrepreneur,1363.09, 867.92,  40537.52,NA,  5400.71,NA,  148.46,21.77,589,Afrique
+33,Licence,Employé, 500.00, 288.93,  40533.86,Automobile,403772.26,300, 6033.44,17.71,450,Asie
+41,Secondaire,Employé,NA,3634.67, 633087.66,Business,380813.26,120, 5323.60,NA,535,Afrique
+20,Licence,Entrepreneur,2560.69,NA, 236042.48,NA,250016.94,180, 3461.61,NA,445,Europe
+68,Master,Sans_Emploi,2833.77,1573.21, 196001.64,Business,292782.57, 24,14566.03,17.64,579,Amérique_Nord
+32,NA,Entrepreneur,4007.14,1725.40,  62330.84,Automobile,479124.04,120, 8781.71,18.48,NA,Amérique_Nord
+NA,Licence,Étudiant,1630.55,1029.67, 121237.82,Immobilier,317112.19, 12,28662.43,15.27,NA,Europe
+37,Licence,Employé,4974.56,1865.49,  99923.95,Business,130253.59,360, 1287.90,11.48,NA,Asie
+35,NA,Employé,4648.27,NA, 485281.67,Automobile,250053.31, 36, 7520.17, 5.23,422,Afrique
+52,Master,Entrepreneur,5907.55,3567.22, 257788.86,Immobilier,267170.34,NA, 4245.03,17.70,767,Amérique_Nord
+45,NA,Entrepreneur,NA, 636.35, 146021.90,Business,479039.09,120, 6437.12,10.40,738,Afrique
+57,Secondaire,NA,1717.53,NA, 160280.93,Education,312383.87,120, 4470.97,11.94,413,Asie
+26,Master,Entrepreneur,5172.14,2331.20, 486197.84,Business,337109.43, 24,18296.22,26.79,494,Amérique_Nord
+NA,NA,Employé,3103.48,NA,NA,Business,NA, 24, 2205.25,21.92,588,Afrique
+42,Licence,NA,3729.50,1354.16,  56706.52,Immobilier,138520.73,360, 2983.06,25.83,310,Afrique
+NA,Licence,Entrepreneur,7749.28,5045.90, 779233.14,Business,NA,240,NA,17.84,812,Afrique
+29,NA,Employé,6047.97,3754.52, 370122.74,Education,363966.93,180, 7463.44,NA,539,Europe
+51,Master,Entrepreneur,8330.11,6856.91,NA,Automobile,148438.49,NA, 2810.75,NA,582,Amérique_Nord
+46,Licence,Employé,NA,NA, 152752.21,Business,294411.09,180, 2532.38,NA,712,Afrique
+NA,Licence,NA,2939.12,1549.56,NA,Automobile,365563.47, 12,35341.69,28.35,667,Asie
+64,Master,Employé,NA, 703.81,  46786.33,Education,NA,240, 4796.30,25.55,741,Europe
+52,Master,NA,2589.48,2066.99,  65791.59,Business,109000.27,300, 1668.83,18.17,366,Asie
+31,Master,Entrepreneur,1274.96,NA, 139627.24,Automobile,172085.34,NA, 4026.49,27.61,645,Asie
+NA,Secondaire,Entrepreneur,NA,2576.16, 212515.17,Automobile,335179.00, 60, 9873.35,25.18,587,Amérique_Nord
+NA,Master,Employé,7150.64,NA,  94773.50,Immobilier,NA,180,  910.67,11.80,773,Afrique
+45,Licence,Sans_Emploi,2781.04,1566.10, 280798.72,NA,329537.55,360, 6831.17,24.86,469,Afrique
+37,Master,Entrepreneur,NA,4550.82, 238932.88,Education,296095.01,300,NA,29.25,328,Afrique
+21,Secondaire,Employé,2687.58,NA, 298666.07,Immobilier,309648.11,300, 2632.57, 9.16,NA,Amérique_Nord
+23,Licence,Employé,2305.00,1679.49, 169678.27,NA,NA,300, 6642.96,16.99,NA,Amérique_Nord
+27,Secondaire,Employé,NA,3400.33,NA,Education,353129.63,120, 4550.10, 9.40,460,Afrique
+39,Secondaire,Employé,3119.54,2114.27,  98155.68,NA,482770.08,360,NA, 6.51,797,Asie
+66,Licence,Entrepreneur,NA,5101.47, 217012.37,Automobile,109873.46,120, 1137.65, 4.48,NA,Asie
+26,Secondaire,Employé,3484.65,2738.35, 154572.39,Automobile,484897.74,300,11594.74,28.67,695,Afrique
+NA,Master,Employé,5606.80,1745.73, 493138.95,Business,NA,180,  935.12, 3.59,788,Amérique_Nord
+NA,NA,Entrepreneur,NA,1558.16, 270710.16,Immobilier,170950.20, 60, 4820.15,23.01,421,Afrique
+22,Autre,Employé,3731.91,1156.31,  40993.62,NA,355844.46,120, 6482.98,NA,615,Asie
+39,NA,Employé,NA,NA, 149805.15,Education, 44795.57,300,  624.58,16.45,569,Amérique_Nord
+NA,Licence,Employé,2534.26,1267.12,NA,Education,404471.25, 60,11867.02,24.98,621,Europe
+62,Licence,Entrepreneur,4755.13,1844.99,  12249.95,Education,153888.10,300, 3126.40,24.32,615,Afrique
+55,Master,Employé,3909.36,2827.86, 370504.15,Education,300459.12,NA, 2137.62,NA,529,Europe
+39,Licence,Employé,1364.67, 757.85,  66500.02,NA,477210.10, 12,40521.11, 3.48,545,Amérique_Nord
+18,Secondaire,Employé,2267.87, 764.94,   9127.09,Business,439521.71,360, 2284.81,NA,383,Asie
+51,NA,NA,4951.42,3914.02, 286248.32,Education,225100.80,360, 3835.59,20.40,768,Afrique
+38,Master,Entrepreneur,NA,3090.06, 292675.90,Immobilier,NA, 24,13315.52,13.06,NA,Asie
+45,Licence,NA,4938.07,1836.54,  78993.30,Immobilier,444265.38,180,NA, 8.37,780,Afrique
+33,Licence,Employé,1952.66,1543.45, 210465.34,Immobilier,NA, 60, 8870.28, 9.13,515,Afrique
+45,Licence,Sans_Emploi,2224.77,1013.88, 100704.73,NA,201150.35,NA, 2586.21,13.31,605,Asie
+43,NA,Employé,3938.05,2172.25, 157254.22,NA,NA, 24, 7410.02,16.66,525,Afrique
+NA,Licence,NA,3783.72,NA, 101131.44,Business, 12572.62,240,NA,15.53,810,Amérique_Nord
+51,NA,Entrepreneur,1056.34, 472.37,  15485.04,Immobilier,174875.78,NA, 2471.88,16.85,694,Asie
+54,NA,Employé,2566.18,2100.56,NA,Automobile,432430.02, 60,NA,17.71,810,Asie
+40,Master,Entrepreneur,NA,3437.97, 137310.53,NA,459168.67, 24,22158.98,14.52,421,Amérique_Nord
+NA,Licence,Sans_Emploi,NA,1919.44,  60711.51,Automobile, 14160.41,180,  320.07,26.60,421,Afrique
+62,Secondaire,Entrepreneur,5891.22,4050.29,NA,NA,215330.05, 24,NA, 9.17,615,Asie
+29,Secondaire,Entrepreneur,4261.51,1392.02, 383680.94,Automobile,207211.66,300, 3637.79,20.95,NA,Europe
+22,Licence,Employé,5856.89,4262.00, 598995.59,Automobile,439306.74,180,10358.80,27.84,757,Afrique
+68,Master,Employé,5103.06,NA,NA,Business,141713.95,360, 1617.64,NA,NA,Asie
+NA,Licence,NA, 921.30, 670.71,  52228.58,Automobile, 97587.58,NA, 1231.45, 8.91,NA,Europe
+22,Master,Sans_Emploi,5567.29,5006.59, 254977.20,NA, 77241.11,360,  620.94, 8.99,456,Europe
+NA,Autre,NA,2165.39,1245.99, 188498.76,Education,469164.43, 60,14977.96,29.30,316,Europe
+39,Secondaire,Employé,1518.05,NA,  87747.95,Business,286578.90, 24,NA,NA,330,Amérique_Nord
+64,Licence,Employé,5561.65,2802.24,  26746.05,NA,188790.50,180,NA,NA,NA,Europe
+29,Licence,Sans_Emploi,5184.65,NA,NA,Immobilier, 36854.58,120,  574.45,14.10,795,Afrique
+18,Master,Entrepreneur,4469.27,3486.84, 178091.16,Education,148166.49, 24, 7039.23,12.93,726,Amérique_Nord
+44,Licence,Employé,2141.70,NA, 218937.80,Business,218543.99,120,NA,19.14,842,Amérique_Nord
+31,Autre,Entrepreneur,7501.23,2550.76, 833843.63,Immobilier,345842.42, 60, 8375.34,15.81,681,Amérique_Nord
+29,Licence,Entrepreneur,4773.62,3111.57, 193780.63,Business,320376.05, 24,NA,NA,NA,Europe
+NA,NA,Étudiant,4500.09,2101.58, 468135.92,Business,171716.48,120, 4062.43,26.28,518,Europe
+39,Master,Entrepreneur, 500.00, 254.12,  23539.55,Education,121416.95,120, 3054.69,28.36,820,Amérique_Nord
+22,Secondaire,Étudiant,NA,1961.72, 238518.42,Education,406042.83,360, 6498.20,19.14,401,Europe
+33,NA,Employé,6227.58,4322.48, 256790.05,Immobilier,354290.95,360, 3272.67,10.62,756,Asie
+40,Licence,Employé,5104.05,2571.39, 110908.99,Automobile,439972.61,NA,NA,11.36,NA,Asie
+69,NA,Employé,2078.76,1617.57, 231033.97,Business,157734.32,360, 1479.54,10.81,670,Afrique
+43,Master,Entrepreneur,1730.25, 759.19,  97345.02,Immobilier,176135.84,180, 1899.24,10.06,505,Europe
+23,NA,NA,2930.75,NA, 268696.02,Business,368371.07,120,NA,NA,NA,Amérique_Nord
+NA,Licence,Entrepreneur,4915.54,3480.72, 117315.73,NA,484505.03,NA,45055.98,20.75,547,Afrique
+33,Licence,Employé,2477.16,1100.41,   5263.37,Education,257661.99, 24,12089.37,11.67,393,Europe
+NA,Secondaire,NA,3972.48,2703.80, 376978.25,Education,471251.24,NA, 5128.40,NA,740,Amérique_Nord
+24,Master,Employé,2261.24, 880.78, 161752.26,Business,287902.49,360,NA,18.89,639,Afrique
+40,Master,Entrepreneur,4318.36,3427.70,NA,NA,209550.69, 12,18016.98, 5.81,NA,Amérique_Nord
+NA,Secondaire,Employé,4350.53,NA, 184394.86,NA, 30801.08,240,  181.34, 3.67,343,Amérique_Nord
+65,Licence,Employé,3445.86,NA, 322858.56,Business,141429.98, 24, 6926.20,16.02,NA,Europe
+NA,Master,NA,6727.96,NA, 705852.91,Education,264416.94,NA,NA,21.91,NA,Afrique
+28,Licence,NA,6618.26,3076.14, 490965.04,Immobilier,295378.19,240,NA,20.44,783,Amérique_Nord
+40,Licence,Employé,6087.82,2862.79, 584147.70,Automobile,281658.89,360, 2411.62,NA,694,Asie
+67,Licence,Entrepreneur,2681.21,1511.34,NA,Automobile,265337.78,240, 5107.70,22.85,588,Europe
+40,NA,Employé,5871.08,2237.59, 577420.71,Immobilier,141429.83,NA, 2482.16,NA,491,Amérique_Nord
+46,Licence,Étudiant,3468.00,2957.84, 225862.44,Business,NA,NA,   42.66,29.53,423,Asie
+21,Licence,Employé,3971.25,NA,  71371.89,Education,228604.90,360, 1315.26, 5.62,824,Afrique
+57,Master,Étudiant,1453.04,NA,  94365.03,NA,349187.20,180, 4303.81,12.50,824,Afrique
+21,Secondaire,Étudiant,NA,4849.71, 364595.66,Business,308392.88, 24,15295.10,NA,NA,Asie
+61,NA,NA, 577.35, 503.76,  63567.24,Business,243515.72, 24,12461.84,20.57,756,Europe
+39,Licence,Entrepreneur,7606.39,5314.24,NA,Education,403040.59,NA, 8438.51,25.11,665,Amérique_Nord
+NA,Licence,Employé,4758.25,4099.17, 295017.43,Automobile,173125.11,NA, 5937.21,14.24,NA,Europe
+54,Master,Sans_Emploi,4412.69,NA, 272199.46,Immobilier,303969.23,180, 7672.51,NA,489,Afrique
+51,Secondaire,Employé,3791.48,2331.59, 172577.16,NA,125295.17,300, 2628.10,25.12,711,Europe
+48,Secondaire,Employé,NA,1524.54,  60234.46,Business, 53932.71,240,  658.95,13.70,491,Europe
+NA,Master,Employé,NA,2903.61,NA,Immobilier,220629.00,NA,NA, 9.95,828,Amérique_Nord
+18,Licence,NA,6320.34,4651.52, 408224.51,Immobilier,224901.38,NA, 3872.96,NA,510,Afrique
+64,Licence,Entrepreneur,1323.31,1100.87, 148412.70,Business, 59596.91,360,  830.33,NA,721,Asie
+39,Secondaire,Étudiant,2578.96,NA,NA,NA,NA, 24, 2730.40,19.11,544,Asie
+23,Master,Employé,1826.02,NA,  38610.65,NA,NA,NA, 8501.16,19.84,NA,Europe
+49,Autre,Entrepreneur,6257.50,1912.13, 318534.92,NA,366721.62,240, 4364.53,13.26,530,Amérique_Nord
+31,Licence,Employé,6015.05,3041.96, 186659.49,Immobilier,149853.79,240, 3721.87,29.72,784,Afrique
+19,Secondaire,Entrepreneur,5103.41,NA, 472476.75,Automobile,318250.50, 24,14444.46, 8.35,597,Asie
+50,Autre,Employé,4436.25,3284.25, 174968.77,Immobilier,265419.69,NA, 5553.58, 9.34,473,Asie
+57,Master,Entrepreneur,NA, 768.95,NA,Education, 39445.51,120,  667.17,NA,756,Europe
+NA,Licence,NA,NA,2451.93, 397407.46,Immobilier, 97380.71, 12,NA,13.75,544,Europe
+68,Secondaire,Employé,NA,1819.23, 579259.90,Education,410092.14,120, 5700.21,11.22,479,Amérique_Nord
+NA,Master,Employé, 500.00, 231.74,   5514.98,Immobilier, 71192.11,240,  456.57,NA,455,Afrique
+64,Autre,Employé,3587.45,1110.28, 278485.90,Automobile,125293.57,NA,11264.49,14.25,493,Europe
+54,Secondaire,Sans_Emploi,2101.91, 975.39, 104945.22,Education,490390.62,180, 9576.02,22.62,373,Amérique_Nord
+32,Master,Employé,5152.79,2624.14, 470074.20,Education, 35808.87,NA,  479.52,15.93,491,Asie
+NA,Licence,Employé,NA,3740.62,  87152.35,Immobilier,259757.33,120,NA,14.16,348,Asie
+58,Licence,Sans_Emploi,5555.01,3380.41, 369975.06,NA,324279.56,NA,13270.12,27.18,571,Asie
+42,Licence,Entrepreneur,3831.10,2175.91, 439198.18,Automobile,184590.46,180,NA,26.08,351,Asie
+32,Master,Employé,5878.25,4635.91,NA,Education,462523.62,240, 6227.60,15.40,802,Europe
+37,NA,Entrepreneur,NA,5532.11, 379186.20,Education,NA,120, 6084.01,15.86,496,Amérique_Nord
+NA,Master,NA, 500.00, 341.35,  27353.76,Automobile,137732.43, 60,NA, 4.28,766,Asie
+57,Master,Entrepreneur, 890.97, 300.61,  17858.32,Immobilier,153366.82, 12,13383.72, 8.60,NA,Afrique
+25,Master,Employé,2724.94,NA,  41188.98,Education, 15727.51,360,  291.23,22.19,644,Europe
+52,Secondaire,NA,3655.44,3098.27, 167979.21,Immobilier,155361.31, 60, 4643.32,25.91,322,Amérique_Nord
+39,NA,Employé,5179.91,NA, 200243.81,Immobilier,NA,120, 3589.90, 4.90,367,Afrique
+46,Master,Employé,3750.34,2778.97, 348247.88,Business,210040.39,240, 2955.34,NA,840,Afrique
+NA,NA,Employé,5538.94,3830.53, 262846.40,Immobilier,294633.13,NA, 6679.70,12.84,416,Amérique_Nord
+31,Licence,Sans_Emploi,1300.62, 779.08,  82959.00,Business, 45188.57,300,  236.28, 3.91,NA,Amérique_Nord
+56,Licence,Étudiant,1012.52, 426.22,  21180.35,Business,NA, 60,NA,23.13,799,Asie
+51,NA,NA,4992.09,2293.36, 104114.57,Education,360492.47,180, 7311.93,23.61,373,Europe
+63,Licence,Employé,NA,1529.81,  23011.53,NA,467510.41,360,NA,19.69,474,Afrique
+68,Master,Sans_Emploi,4269.31,3359.39, 111392.39,Education,NA,240,NA,NA,545,Europe
+60,NA,Employé,6230.44,5079.09,NA,Immobilier,409483.49,240, 2844.61, 5.62,590,Afrique
+25,Licence,Employé, 500.00, 257.60,   1761.92,NA,213043.73,360, 1235.16,NA,439,Asie
+47,Master,Employé,4676.90,NA, 169609.26,Automobile,477701.09, 24,21518.08, 7.60,NA,Europe
+33,Master,NA,NA,4769.92, 670675.26,Business,187093.95, 60, 3378.49, 3.20,847,Europe
+64,Licence,Étudiant,NA,4229.42, 355805.08,Business,249796.53,180, 6145.77,29.13,NA,Europe
+65,Master,Employé,6314.69,2662.90,NA,Automobile,279957.56,240,NA,26.64,702,Asie
+NA,NA,Sans_Emploi,4316.65,NA, 309766.04,Education,211692.41,NA, 4002.66,NA,492,Europe
+33,Secondaire,NA,8070.89,NA, 438553.14,NA,416734.64,180, 8398.41,23.44,836,Asie
+NA,Licence,Étudiant,NA,2812.96, 383771.02,NA, 32522.51,240,  271.02, 7.95,393,Europe
+19,Master,Entrepreneur,7799.04,NA, 336337.86,Automobile,NA,NA, 3531.06,NA,676,Afrique
+28,Master,Entrepreneur,2925.95,1652.50,  52382.28,NA,249678.96,NA,NA,24.17,784,Amérique_Nord
+30,Licence,Employé,3166.81,1389.31,NA,Immobilier,378351.77, 24,19988.77,23.92,422,Amérique_Nord
+22,Secondaire,Employé, 883.41, 556.14,  54486.99,Immobilier,166458.61, 60,NA,25.50,584,Asie
+66,Master,Employé,2841.85,2101.47,  93354.43,Automobile,393179.49,300, 8997.65,27.43,334,Asie
+62,Master,Entrepreneur,7440.06,5667.22, 133901.22,NA,333220.29, 36,10855.63,10.66,785,Amérique_Nord
+63,Licence,Étudiant,1642.11,1203.50, 135369.75,NA,172575.54, 36, 5741.05,12.11,799,Asie
+NA,Autre,Sans_Emploi,1695.10,1510.71,  93242.85,Automobile, 33431.75,NA,  391.11,NA,530,Afrique
+33,NA,NA,2129.42, 888.23, 197058.23,Immobilier,254505.63, 36, 7755.25, 6.11,610,Europe
+32,Secondaire,Employé,5699.98,2599.50, 675832.48,Immobilier,327010.46, 60, 9081.95,22.27,693,Europe
+53,Secondaire,Sans_Emploi,4237.62,2922.88,NA,Immobilier,NA,180, 5141.36,15.88,363,Europe
+NA,NA,Employé,NA,4766.76, 534804.03,Business,110319.74, 12,10116.21,18.04,321,Amérique_Nord
+64,Licence,Entrepreneur,5063.51,NA, 421839.28,Education,347938.15, 60,NA, 4.14,461,Amérique_Nord
+40,Licence,Employé,5842.68,3598.32,NA,Business,NA,180, 3447.92, 9.81,697,Asie
+59,Doctorat,Entrepreneur,2275.02, 980.65, 243065.58,Automobile,NA, 12,38801.50, 3.88,NA,Asie
+66,Licence,Employé,6519.81,2665.28, 141507.45,Business,NA,240, 1451.17,NA,668,Afrique
+18,Licence,NA,NA, 694.36,NA,NA, 39827.44,NA,  726.49, 3.61,624,Europe
+24,Licence,Employé,NA,1887.33,  11289.05,NA,NA,120, 5197.97,15.46,321,Asie
+NA,Licence,Entrepreneur,8694.48,2833.83, 802132.18,Immobilier,387234.04,NA,NA,29.47,626,Europe
+37,Doctorat,Employé,3823.55,NA,  29322.11,Automobile, 26625.80,NA,  294.10,12.69,NA,Afrique
+20,Master,Étudiant,7124.30,2430.16, 681274.10,Immobilier,166775.65, 60, 4787.15,23.89,488,Europe
+68,Master,Employé,4394.67,2709.92, 307080.36,NA,NA,NA, 3836.43,12.05,447,Asie
+27,Master,Entrepreneur,4747.73,2137.16, 378928.12,Immobilier,185475.48,240, 1961.38,11.37,748,Amérique_Nord
+53,Licence,Entrepreneur,6281.43,NA, 214176.75,Education,399812.05, 60,11784.29,NA,781,Asie
+40,Secondaire,Entrepreneur,NA, 738.61, 141354.96,Business,426908.59, 24,18563.18, 4.13,802,Asie
+38,Doctorat,Employé,NA,4330.31, 620724.70,Business,398776.83,120, 5162.26, 9.51,NA,Amérique_Nord
+23,Autre,NA,8108.20,6040.27, 655504.05,Immobilier,NA, 60,NA,23.13,643,Afrique
+44,Master,Sans_Emploi,NA,4883.66, 126023.60,NA,101780.33, 60, 2084.75, 8.43,369,Amérique_Nord
+47,Master,Employé,4348.16,2786.53, 280337.85,Business,340542.10, 60, 8055.07,14.74,355,Afrique
+62,Master,Employé,NA,4558.30, 437592.96,Education,313846.20,180, 4912.64,NA,605,Afrique
+29,Licence,Sans_Emploi,4268.11,2209.72, 187111.04,NA,413228.76, 60,10683.03,18.84,620,Europe
+61,Master,Employé,4526.13,2568.49, 516072.75,Business,NA, 24,20254.59,14.57,757,Europe
+34,NA,Employé,NA,1995.91, 206870.66,Immobilier,327732.62,120, 4677.41,11.87,682,Afrique
+34,Licence,Étudiant,3161.30,2352.22, 273702.67,Business,NA,240,NA,NA,322,Asie
+55,NA,NA,4090.10,3643.72, 339172.70,Immobilier,NA,180, 3580.90, 9.78,400,Amérique_Nord
+65,Licence,NA,5181.46,4553.93,NA,Education,401440.07,NA,34259.67, 4.42,443,Afrique
+49,Master,Employé,4063.63,1236.13, 117295.46,Education,135790.70, 36,NA, 8.01,408,Afrique
+61,Licence,Employé,3172.22,1149.15, 212503.11,NA,117779.63,NA, 5596.14,12.94,614,Asie
+30,Secondaire,Employé, 966.68, 430.07,  82235.39,Education,378360.74,180, 7279.31,22.24,822,Afrique
+63,Licence,Employé,5965.24,4751.15, 518215.47,NA,272158.77,120, 7064.28,29.45,727,Afrique
+63,Master,Employé,2382.07,NA,  17110.61,NA,NA,120, 8500.48,NA,NA,Afrique
+NA,NA,Étudiant,NA,1695.49,  96557.68,NA,179393.70,NA,NA, 7.96,561,Afrique
+55,Autre,Employé,4500.92,2994.51, 498829.66,NA,479472.63, 36,17042.06,16.78,712,Asie
+42,Master,Employé,5306.54,3915.74,  53754.34,Immobilier,465850.21,300, 7281.72,18.57,376,Europe
+42,Secondaire,Employé,1459.66,1176.28,  50241.91,Automobile,491430.38, 12,43376.15,NA,362,Afrique
+38,Licence,Employé,2893.88,1391.02,NA,Immobilier,307491.72, 36,NA, 9.48,466,Asie
+44,Secondaire,Entrepreneur,2273.90,1249.55, 243522.75,Business,271987.88,NA, 4143.51,18.20,341,Amérique_Nord
+34,Secondaire,Entrepreneur,4065.33,NA, 157328.53,Immobilier,317853.48, 60,NA,NA,770,Amérique_Nord
+55,Master,Employé,3479.47,NA, 101079.52,NA, 65169.48,120,  641.99, 3.42,603,Afrique
+37,Master,Entrepreneur,3608.49,2799.14,NA,NA,219169.01, 36, 8094.94,19.55,734,Afrique
+44,Master,Entrepreneur,6513.95,5267.00, 115917.22,Business,496398.62,180, 6431.64,13.46,NA,Europe
+69,Licence,Employé,3379.11,2507.78,NA,Automobile,358225.44, 36,12544.68,15.72,527,Amérique_Nord
+44,Master,Employé,4217.69,1809.90,  11134.48,Education,100229.28,120,NA,28.91,463,Amérique_Nord
+64,Master,Employé,4456.07,NA, 364718.15,Business, 37812.82,240,  464.18,NA,685,Asie
+63,Autre,Entrepreneur,NA, 531.09,  66559.89,Business,118152.79,180, 2560.82,25.41,650,Amérique_Nord
+41,NA,Sans_Emploi,2828.99,1259.34, 314136.47,Business,NA, 24, 2300.01,14.27,669,Europe
+34,Autre,Employé,4032.43,2165.07, 256706.37,Immobilier,383547.69,120,NA,NA,343,Europe
+41,Secondaire,Entrepreneur,6519.49,NA, 351809.47,Immobilier,308185.61, 24,15611.68,19.51,707,Asie
+53,Master,NA,3731.61,3235.20, 243351.84,Business,328015.14, 12,31066.21,24.31,357,Europe
+21,Licence,NA,4008.91,NA,NA,NA, 16646.89,240,  225.88,15.54,630,Europe
+25,Master,Employé,5010.30,4475.74, 155252.12,Automobile, 84868.50,240, 1740.22,NA,587,Afrique
+22,Master,Entrepreneur,4143.22,NA,NA,Immobilier,392694.05,180, 6824.45,19.75,775,Europe
+28,NA,Employé,NA,NA, 198529.48,Automobile,455500.50,180, 4967.54,NA,337,Afrique
+60,Secondaire,Employé,3808.77,2797.72, 313164.50,Immobilier,465667.99,240,10376.11,26.60,694,Asie
+NA,Secondaire,Étudiant,5600.95,4368.72, 510350.50,Automobile,207669.82, 60, 5628.69,21.09,793,Afrique
+38,Licence,Employé,4105.21,3146.66,NA,Automobile,NA,240, 3844.31,13.91,751,Asie
+58,Master,Employé,5407.79,2646.87,  56498.21,Automobile,140129.84, 12,13207.93,NA,725,Europe
+56,NA,NA,4248.25,2311.14, 341528.10,Automobile, 44336.16,120,NA,NA,645,Amérique_Nord
+60,Master,NA,2843.93,1520.88, 316875.52,Education,NA,120, 4473.55,18.42,696,Asie
+26,Master,Entrepreneur,NA, 978.63,  68813.13,Automobile,462548.11, 12,42397.60,NA,589,Asie
+57,Master,Employé,4333.30,1319.89,  29125.66,Automobile,113214.61,240, 1130.31,NA,801,Afrique
+58,Licence,Employé,4646.32,3938.37, 468615.19,Education, 38734.26, 36,NA,NA,645,Amérique_Nord
+41,NA,NA,3844.24,2496.02, 165026.58,Automobile,400325.19, 60,NA,26.08,331,Amérique_Nord
+25,Secondaire,NA,6322.14,3266.07, 163554.52,Education,180136.25,120, 2120.43, 7.31,466,Asie
+59,Master,Employé,2887.61, 879.83, 209950.50,Immobilier,381412.50,240, 2662.61, 5.68,566,Europe
+27,Master,Entrepreneur,3115.68,1685.07,NA,NA,224779.39,300, 5341.32,28.49,659,Europe
+46,Licence,Entrepreneur,1194.41, 496.50,  16008.36,Immobilier,NA,NA, 1810.17, 3.26,397,Amérique_Nord
+66,Licence,Employé,6069.21,3184.76, 668302.62,Immobilier,465572.90,240,10029.29,25.69,326,Asie
+NA,NA,Entrepreneur,NA,1527.98, 496597.89,Immobilier,236844.01, 24,10708.57, 7.97,569,Asie
+47,Master,Sans_Emploi,4013.01,NA,  84657.22,Immobilier,337765.83,NA, 6393.23,22.63,NA,Afrique
+58,Licence,Employé, 500.00,NA,  36369.14,Education, 41794.75,180,  490.90,11.60,821,Afrique
+56,Master,Employé,5194.77,4208.58, 436225.09,Automobile,NA,360, 2101.15, 9.73,479,Afrique
+45,Licence,Employé,1041.98, 482.05,  80142.08,Immobilier,172981.01,120, 3306.34,19.68,553,Asie
+48,NA,Étudiant,NA,1557.07,NA,Automobile,NA, 60,NA,19.87,NA,Europe
+50,Secondaire,Employé,NA,1391.89, 163015.47,Education,  5509.64, 60,NA,19.88,808,Asie
+48,NA,Entrepreneur,1088.56, 697.73,  58590.38,Immobilier, 66670.20, 24, 2930.29, 5.18,809,Europe
+NA,Master,NA,5763.58,2452.56, 239617.26,NA,NA,180, 7386.13,NA,827,Asie
+30,Licence,Employé,NA,2259.79, 216964.56,Education,234862.52,300, 2170.73,10.22,661,Afrique
+34,Master,Employé,3127.93,1180.05, 269149.99,Immobilier,  8501.76, 12,  802.44,23.64,812,Europe
+68,Licence,Employé,3404.36,1955.86,NA,Education,NA,120, 3168.73,24.34,737,Amérique_Nord
+68,Licence,NA,3046.66,2585.64,NA,Automobile,428619.08,NA, 7737.64,20.66,693,Afrique
+NA,Secondaire,Employé,1804.85, 610.42, 141571.18,NA, 35721.98,NA,NA, 4.48,359,Asie
+30,NA,NA,3646.18,2675.92,NA,Education,374734.56, 60, 7333.87, 6.51,521,Afrique
+20,Licence,Sans_Emploi, 836.40, 558.56,NA,Immobilier,373574.47,300, 9217.90,29.59,693,Europe
+67,Master,Employé,3596.27,2139.23, 336015.79,Immobilier,397371.88,NA, 7180.26,21.58,740,Afrique
+25,NA,Employé,NA,1913.36, 274552.60,Immobilier,454597.49,NA, 4459.21, 3.33,498,Afrique
+32,Licence,Entrepreneur,1526.33,1371.94, 107228.50,Education, 98211.33,240,  818.43, 7.95,620,Europe
+40,Secondaire,NA,NA,3544.71, 432800.49,NA,351275.58,NA,32076.36,17.23,776,Europe
+40,Autre,Entrepreneur,3804.35,1629.18, 439401.71,Business,247438.65, 60,NA,10.19,382,Amérique_Nord
+34,Secondaire,Entrepreneur,2869.16,2208.89, 105046.51,Education,435502.26, 24,21555.24,17.11,436,Europe
+34,Licence,Employé,1826.83, 807.60, 111254.90,NA,406639.51,180,NA, 4.59,324,Amérique_Nord
+65,Licence,Entrepreneur,3537.59,2156.49, 268500.01,Automobile,230346.62, 12,20363.79,11.05,581,Amérique_Nord
+52,Secondaire,Employé, 500.00, 206.53,NA,Immobilier, 10406.06, 12,  934.04,13.94,817,Europe
+45,Secondaire,Employé,3685.09,2058.69,NA,Business,314549.69,360, 4848.47,18.42,818,Amérique_Nord
+53,NA,Employé, 672.32, 377.68,  51338.86,Immobilier,242356.54, 60, 5332.49,11.52,514,Asie
+NA,Licence,Employé,2698.71,1552.25,NA,Immobilier, 79849.69, 12, 7700.51,27.86,451,Asie
+68,NA,NA,3615.03,2748.95,  54736.38,Immobilier,191686.61,180, 1784.59, 7.57,722,Afrique
+NA,Master,Étudiant,4865.19,3434.65, 460218.56,Education,499376.40,300, 5467.34,NA,NA,Asie
+32,Master,Employé,NA,4573.47,NA,NA,NA,240, 2579.71,13.05,632,Amérique_Nord
+35,Licence,Entrepreneur,NA,1155.65, 354796.04,Immobilier,146550.32, 60, 2903.95, 7.03,405,Europe
+46,NA,Employé,5700.57,3771.82, 553195.85,Automobile,NA,120, 5563.55,24.65,482,Asie
+60,NA,NA,4117.88,1508.70, 232492.20,Business,414915.65, 36,14176.80,13.98,558,Asie
+22,NA,Employé,4801.28,2548.37,NA,Business,NA, 12,NA,26.30,NA,Europe
+38,Licence,Employé,2362.85,1956.09, 152053.71,Education,NA,120, 5408.82,17.27,496,Europe
+37,Licence,Sans_Emploi,5084.18,3066.12, 608727.27,NA,437785.40, 36,16662.66,21.75,NA,Asie
+47,Master,Employé,3664.85,3080.02, 191071.05,Automobile,401570.77,120,10464.72,29.59,377,Asie
+30,Secondaire,Employé,7609.87,4189.34, 184967.99,NA,NA, 36, 4467.21,24.23,NA,Europe
+47,Licence,Employé,5788.48,2188.61,NA,Immobilier,247737.20, 12,23773.79,26.89,718,Asie
+20,Doctorat,Employé,7782.22,3118.11, 513868.00,Immobilier,129851.39, 12,12006.36,19.64,NA,Amérique_Nord
+53,Secondaire,Étudiant,1757.33,1055.99,  91692.82,Immobilier,154882.48,360, 3759.15,29.12,710,Europe
+34,Licence,Employé,5861.18,2178.63, 583840.42,Education, 37113.35, 36, 1088.65, 3.57,449,Afrique
+25,Master,Étudiant,NA,3961.56, 490588.15,NA,140001.25,360, 3004.47,25.74,514,Europe
+18,Autre,Sans_Emploi,4626.89,NA, 274494.01,Immobilier,355659.78, 36,14563.81,NA,413,Afrique
+63,NA,Employé,4575.02,1698.22, 164011.29,Automobile,107432.30,240, 2591.51,28.85,826,Afrique
+45,Doctorat,Employé,5218.87,3377.35,  77166.54,Automobile,448593.86,NA,10604.13,28.36,337,Asie
+63,NA,Entrepreneur,4458.44,1972.11, 148441.49,Immobilier,269561.09,360, 3712.01,16.40,650,Amérique_Nord
+43,Secondaire,Entrepreneur,4568.04,1654.90, 309160.62,Automobile,  3795.13,NA,   69.64, 3.85,663,Asie
+24,Master,Employé,3604.02,1955.86,NA,Education,204005.76,300, 2936.42,NA,307,Europe
+42,Licence,NA,4436.52,3887.73, 523393.80,Immobilier,160487.26, 36, 5925.10,19.52,522,Europe
+59,NA,Employé,5876.14,NA, 281693.72,Immobilier,445194.74,NA,14235.94,NA,770,Europe
+69,Licence,Sans_Emploi, 506.12, 430.54,  46412.37,Business,245065.38, 12,23556.86,27.22,786,Amérique_Nord
+29,Autre,Sans_Emploi,NA,1683.93,  17512.16,Immobilier, 75263.04,NA, 6429.64, 4.61,673,Afrique
+55,Secondaire,Employé,5389.67,2766.35,  63413.27,Education,286864.67, 36, 8393.04,NA,505,Amérique_Nord
+62,Master,Employé,4149.91,3099.75, 269326.45,Automobile,403406.63,180, 6706.59,18.72,558,Asie
+18,Master,Sans_Emploi,4202.66,NA,NA,Automobile,222454.74, 60, 4037.88,NA,365,Amérique_Nord
+51,Secondaire,Étudiant,4203.52,NA, 154030.07,Automobile,284333.79,240, 6465.47,27.16,340,Asie
+55,Master,Employé,NA,1459.54, 158257.95,Education,480784.67,300,11309.08,NA,572,Asie
+55,Licence,Employé,2389.46,1338.21,  30940.68,NA,341355.50,300, 4899.88,16.97,740,Amérique_Nord
+29,Licence,Employé, 997.98, 614.76,NA,NA,354168.55,180, 6024.91,NA,591,Europe
+NA,Licence,Employé,4736.24,1518.47, 373234.06,Immobilier,NA, 36,14437.20,23.72,NA,Asie
+69,Master,Employé,NA,3774.26, 173266.47,Immobilier,136477.88,NA,12100.37,NA,436,Asie
+45,NA,Employé,2180.35, 739.66,NA,Education,358674.98, 60, 8844.72,16.64,553,Afrique
+35,Licence,Employé,2129.51,1160.01, 186851.65,Business,319195.32, 60,NA, 3.56,301,Asie
+39,Autre,Employé,6221.67,3817.66, 112531.62,Automobile,  3886.31,180,   38.98, 8.81,802,Asie
+65,Secondaire,NA,5546.28,3630.24,NA,Automobile,404941.02, 60,10823.31,20.42,NA,Amérique_Nord
+38,NA,Employé,1121.19, 675.56,NA,Immobilier,107426.73,NA, 2181.44,24.35,470,Asie
+45,Licence,Entrepreneur,2733.35,1498.05, 218807.76,Automobile,471847.72,120, 8200.60,17.00,609,Amérique_Nord
+22,Autre,Employé,2448.23,1658.51,NA,Automobile,370473.33,300, 3566.96,NA,339,Asie
+39,Secondaire,NA,5592.24,4012.14, 362630.40,Immobilier, 12865.14,NA,  228.90,21.24,454,Afrique
+NA,Secondaire,Employé,3815.29,2313.05, 397661.16,Immobilier,368154.81, 60, 7038.98, 5.54,806,Afrique
+51,Master,Employé,1117.32, 542.08,  81959.82,Automobile,328206.51, 24,14357.76, 4.72,460,Afrique
+49,Doctorat,Employé,4954.95,1834.87,  83284.48,NA,165311.49,NA,14129.18, 4.70,NA,Europe
+26,Licence,Employé,4319.87,1679.06,  39694.74,Business,NA,180, 4889.46,12.28,747,Amérique_Nord
+33,Licence,NA,8420.04,5958.38, 406168.53,NA,NA,360, 1487.95, 8.40,408,Amérique_Nord
+64,Secondaire,NA,NA,2338.68,NA,Immobilier,187947.20,360, 1393.53, 8.11,352,Asie
+56,Autre,NA,2889.66,1589.52,  89820.69,NA,115372.07, 36, 4473.24,NA,714,Asie
+34,Licence,Entrepreneur,NA,3785.76, 338814.34,Immobilier,NA,120, 1036.05,NA,821,Asie
+42,Autre,Entrepreneur,NA,NA, 411727.77,Education, 77768.52, 12, 7178.76,19.32,317,Europe
+66,Licence,Employé,7612.18,NA, 123233.18,Immobilier,328941.63,360, 5664.60,NA,336,Amérique_Nord
+23,Master,Employé,7337.55,5003.87, 376290.69,Automobile,233884.71,360, 1691.77,NA,625,Asie
+68,Licence,Employé,4227.40,NA, 284345.80,Automobile, 51928.49,360,NA,NA,NA,Europe
+NA,Autre,Employé,4037.41,NA, 171306.80,Automobile,423170.81,NA, 2580.82, 6.16,384,Amérique_Nord
+52,Master,Employé,4669.43,1669.84, 314745.80,Business,NA, 60, 3595.44,16.23,848,Europe
+54,Master,Entrepreneur,8102.55,2874.36,  93713.40,Automobile,476575.84, 60,15299.04,29.59,635,Afrique
+35,Master,Entrepreneur,4600.59,3336.42, 136177.39,NA,NA,240, 8357.56,21.55,511,Afrique
+35,Master,Employé,6618.54,NA, 685469.25,Business,357877.26,NA, 3614.84,NA,332,Amérique_Nord
+31,Licence,Entrepreneur,4365.82,2979.74,  70586.61,Automobile,223285.12, 12,20218.72,15.62,553,Asie
+45,Secondaire,Employé, 500.00, 244.08,   8095.46,Education,494426.44,360,11169.40,27.10,767,Europe
+51,Secondaire,Entrepreneur,4310.14,2111.25, 435342.81,Automobile,485701.40,360, 9013.79,22.24,NA,Afrique
+23,Autre,Étudiant,2666.27, 838.10,   7657.55,Education, 40431.14,NA, 1305.85,29.91,733,Afrique
+29,Master,Employé,5841.28,4019.10, 544939.32,Automobile,141861.67,NA, 2860.14,21.25,814,Asie
+30,Master,Entrepreneur,2427.59,2063.22, 289743.03,Education,NA, 24, 3711.22, 7.46,558,Amérique_Nord
+NA,Licence,Employé,1003.10, 781.42, 111650.46,NA, 57244.42,240,  949.17,19.48,475,Asie
+50,Licence,Employé,NA,3247.21, 334926.86,Business,NA,240, 1612.85,29.18,825,Europe
+49,Master,NA,3610.74,NA,  54558.03,Education,217630.61, 12,19079.58, 9.47,NA,Amérique_Nord
+46,Master,Employé,5457.04,2451.49,  16595.90,Immobilier, 96569.14,240,  563.54, 3.57,699,Amérique_Nord
+NA,Secondaire,Employé,NA,2464.62,NA,Immobilier,NA, 12,31498.92,25.49,838,Afrique
+45,Master,Employé, 500.00, 448.14,  10668.86,Education,455253.80,NA,41011.00,14.63,796,Europe
+42,Licence,Entrepreneur,2519.10,2123.21,NA,NA,423799.77,NA,NA,20.80,NA,Afrique
+24,Licence,NA,1172.52, 870.83,  12769.38,Business,204771.75, 24,NA, 4.00,799,Asie
+47,Secondaire,Entrepreneur,NA,1970.94, 354392.91,NA,122270.64,NA, 2488.39,24.22,540,Amérique_Nord
+58,Master,NA,2380.92, 794.88,  96707.45,Education,288996.77,NA, 6266.93,25.98,322,Europe
+59,Master,Étudiant,NA,2178.64, 206440.47,Business, 87638.29, 12,NA,12.41,669,Amérique_Nord
+57,Licence,Employé,NA,2837.96, 428959.12,Education,235883.51,360, 3194.90,16.12,NA,Europe
+23,Licence,Employé,5919.66,3845.71, 512490.00,Automobile,177117.61,180, 3970.15,26.36,762,Amérique_Nord
+28,Master,Sans_Emploi, 500.00,NA,NA,Education,368766.75, 60, 9655.51,19.44,436,Europe
+NA,Licence,Employé,4131.53,2272.30, 263810.35,Education,NA,NA, 2381.47, 8.26,617,Amérique_Nord
+NA,Licence,Employé,3245.61,1418.79,  92559.59,Automobile,291079.68,120, 3075.98, 4.92,571,Amérique_Nord
+46,Master,Employé,2223.83, 799.00,NA,Automobile,221914.13,360, 1154.94, 4.73,841,Europe
+24,Doctorat,Employé,3066.92,1968.17, 132310.18,Education,398997.00,180, 6339.60,NA,574,Europe
+48,NA,Employé,6096.87,3983.52, 510251.31,Business,360084.59, 24,18123.39,18.84,672,Asie
+30,Licence,Employé,4489.45,2036.34, 530088.41,Automobile,NA,NA,NA,22.97,NA,Europe
+55,Secondaire,Employé,4584.12,2273.84,NA,Immobilier,307240.65,180, 3944.11,NA,324,Europe
+29,Master,Employé, 500.00, 443.99,  13322.39,NA,  9081.41,240,  136.39,17.46,643,Europe
+NA,Licence,NA,3020.08,NA, 212434.27,Business, 81925.45, 24, 4168.86,19.98,693,Afrique
+24,Master,Employé,4501.08,2814.42, 459753.42,NA,274803.92,300, 6329.66,27.61,745,Afrique
+22,Secondaire,Employé,NA, 360.92,NA,Education,239947.35,300, 3427.14,16.88,634,Europe
+24,Licence,Entrepreneur,5331.11,NA, 607534.85,Immobilier, 67326.35,180,  506.82, 4.26,NA,Afrique
+36,Master,Employé,5726.79,3906.95,  46396.61,Automobile, 22381.12, 36,  829.71,19.82,429,Amérique_Nord
+62,Doctorat,Employé,5432.93,3924.40, 146815.29,Automobile,NA, 12,27958.23,21.74,589,Afrique
+38,Master,Entrepreneur,6153.02,4668.42, 673961.53,Business,360027.00,120,NA,14.47,601,Amérique_Nord
+22,Licence,NA,3525.79,3031.70,NA,Automobile,  9895.84, 12,  859.59,NA,731,Asie
+44,Secondaire,Employé,NA,1927.06,NA,NA,224951.72, 36, 8225.38,18.82,817,Amérique_Nord
+49,Licence,Employé,4274.24,1651.35, 211860.93,NA,136033.57,300,  906.64,NA,481,Asie
+48,Secondaire,Entrepreneur, 753.87, 245.57,  62941.04,Business,323560.44,360, 5178.17,19.14,NA,Afrique
+37,Licence,Employé,1921.05,1310.29,  84453.65,Education,446326.59, 12,42763.71,26.58,358,Afrique
+33,Autre,Sans_Emploi,5469.47,4722.39,  10075.90,Immobilier, 22871.93, 24, 1258.20,NA,NA,Asie
+69,Doctorat,Employé,3104.92,2393.86, 343847.80,Immobilier,463439.73,NA, 4211.51, 9.14,324,Amérique_Nord
+NA,NA,Employé,NA,2066.70,  54298.17,Immobilier,288290.09, 24,14535.11,19.02,751,Afrique
+45,Licence,Entrepreneur,5229.24,2563.91, 601582.80,Automobile, 44521.45, 36, 1460.74,NA,798,Afrique
+19,Secondaire,Entrepreneur,2809.20, 951.37, 186287.68,Automobile,179890.41, 24,NA,27.15,676,Amérique_Nord
+63,Licence,Entrepreneur,5768.43,2919.24,NA,Education,190888.17, 24,10366.03,26.85,668,Europe
+66,NA,NA,2346.89, 968.71, 243946.34,Automobile,NA, 24,NA,NA,NA,Afrique
+NA,Licence,NA,2655.68,1271.91, 264076.03,NA,194115.81,180, 3906.05,23.40,466,Amérique_Nord
+60,Master,Étudiant,3902.83,NA, 237604.20,Business,160062.07, 36, 5822.82,NA,357,Afrique
+56,Licence,Entrepreneur,6874.42,NA,NA,Business,NA,120,NA,21.79,807,Europe
+51,Secondaire,Sans_Emploi,3020.67,1917.90,NA,NA,158406.79,180, 2109.57,14.00,515,Asie
+63,Secondaire,Employé,3820.55,3249.94, 289665.53,Automobile,497082.50,240, 8734.18,20.74,763,Amérique_Nord
+59,Master,Sans_Emploi,2115.43,1480.53,NA,Business,239534.59,120, 5274.60,23.96,619,Afrique
+24,NA,Étudiant,3348.78,NA, 282875.20,Education,252169.22,180, 4556.04,20.68,NA,Amérique_Nord
+NA,Master,Entrepreneur,5281.39,2971.90, 428165.88,Immobilier, 66400.64,240,NA, 4.46,651,Europe
+42,NA,NA,3920.86,3288.51, 100232.89,Business, 54847.86,180,  643.52,11.58,357,Asie
+57,Master,Étudiant,6861.96,NA, 213042.72,Education,183136.44,120,NA,NA,566,Europe
+25,Doctorat,NA,NA, 882.92, 117257.87,Immobilier,NA,240,  122.25, 4.63,673,Amérique_Nord
+26,Master,Sans_Emploi,2901.00,1894.78,NA,Automobile,227252.28,NA, 4332.59,22.01,NA,Amérique_Nord
+NA,Licence,Employé,5806.70,4999.09,NA,Education,NA,300,  609.88,13.00,694,Afrique
+57,Master,Entrepreneur,4824.76,2937.89, 479542.74,Automobile,308870.67,180, 6203.36,23.35,NA,Asie
+NA,Licence,Entrepreneur,3532.40,2313.02,  37641.37,Business,379151.94,240, 2546.43, 5.21,406,Europe
+29,Master,Employé,3058.10,1869.98, 248400.63,NA,283636.76, 12,26667.08,22.88,764,Europe
+60,NA,Employé,5870.90,NA, 339860.46,Education,NA,180, 3924.32, 5.99,769,Asie
+56,Licence,Employé,3451.56,NA,NA,Automobile,422421.71, 12,NA,22.26,615,Europe
+NA,NA,Employé,4210.53,2330.10, 165131.61,Business, 98390.44, 12, 8530.65, 7.38,697,Europe
+50,Secondaire,Entrepreneur,2169.49,NA,  85203.55,NA,231631.76,180, 3996.45,NA,476,Asie
+NA,Master,Employé, 500.00, 448.70,  21044.86,Business,144106.68,NA, 6851.77,13.01,441,Amérique_Nord
+33,Secondaire,Employé,4549.02,3907.17, 287395.82,Automobile,193478.08, 24,NA, 8.83,353,Afrique
+31,Licence,Employé,3534.45,2474.48, 237353.41,Automobile,215088.63, 60, 4178.30, 6.20,849,Asie
+61,Licence,Employé,6870.48,3235.33, 351101.04,Education,439526.95,360, 2314.02,NA,695,Europe
+61,Licence,Employé,NA,1229.02, 154906.62,Automobile, 50310.74,360,  821.68,NA,302,Europe
+56,Autre,Employé,5170.94,NA, 495154.95,NA,127350.98, 24,NA,18.77,645,Amérique_Nord
+60,Licence,Employé,4921.10,3207.43, 424515.12,Automobile,NA, 60, 2868.72,27.70,567,Asie
+54,Secondaire,Sans_Emploi,5509.24,NA, 344224.16,Education,450603.94,NA, 3394.67,NA,495,Afrique
+59,NA,NA,6063.45,NA, 167736.45,Business, 37190.69,NA,  420.40, 6.40,578,Asie
+24,Master,Employé,3603.68,1380.28, 162623.31,Automobile,NA,300,NA,14.42,490,Amérique_Nord
+28,Master,NA,6896.10,2443.93,  16676.90,NA,465559.79,180,10483.10,26.49,686,Amérique_Nord
+63,Licence,Employé,4375.05,2920.78, 336730.91,Immobilier,499824.58, 36,14774.61, 4.08,669,Afrique
+56,NA,Employé,6972.06,NA,NA,Business,308362.50, 36,10153.90,11.40,NA,Asie
+53,Licence,Employé,3991.49,2862.23, 408518.93,NA,340878.26,180, 3654.76,NA,509,Europe
+NA,Licence,NA,5619.58,3483.70,NA,Education,131176.30,240, 3173.95,28.94,NA,Afrique
+NA,Secondaire,Entrepreneur,NA,2173.90, 166182.51,Business,190467.47, 36, 7623.41,25.50,NA,Asie
+NA,Autre,Employé,6359.80,4607.33, 316720.60,Immobilier,211948.35, 12,18740.26,11.08,421,Amérique_Nord
+56,Master,Employé,5921.39,1890.51, 452848.06,Immobilier,438265.88,300, 4197.64,10.69,394,Europe
+42,Master,Sans_Emploi,4650.57,2148.96,NA,Business,161145.60,240, 1871.89,NA,428,Amérique_Nord
+69,Master,Employé,NA,NA,NA,Business,215594.52, 24,10522.22,15.67,746,Amérique_Nord
+21,NA,Employé,5890.10,4375.35, 193582.64,Business,NA,NA, 2520.22, 6.87,373,Amérique_Nord
+NA,Licence,Entrepreneur,NA,3310.21, 114672.85,Business,  2079.23, 24,  115.85,29.62,733,Afrique
+39,Master,Sans_Emploi,4964.74,NA, 415025.40,Business,281316.64, 60, 6327.61,12.49,586,Amérique_Nord
+67,Master,NA,5075.89,2198.62, 365768.83,Automobile,416036.90,240, 4282.96,10.96,716,Europe
+62,Licence,NA,2583.55,1150.17,  10267.47,NA,244324.20,300, 4079.10,19.89,641,Afrique
+58,Licence,NA,7628.74,5884.56, 838673.70,Immobilier,357774.18,NA,NA, 8.01,NA,Europe
+NA,Autre,Employé,2762.14,2274.47, 305054.29,Business,264900.77,180, 6145.97,27.36,351,Amérique_Nord
+30,Master,Entrepreneur,3940.01,2113.58,NA,Immobilier,256287.85,NA, 1389.94, 5.09,816,Europe
+29,Licence,NA,4313.34,3242.21, 326560.09,NA,310611.12, 24,13527.01, 4.28,812,Amérique_Nord
+41,NA,NA,NA,1464.94, 276495.99,Education,480306.15,360, 6761.88,16.78,740,Europe
+54,Licence,Employé,4912.91,1693.09, 513703.40,Immobilier,166474.74, 36, 6234.40,20.56,504,Amérique_Nord
+35,NA,Employé,4522.39,2367.60,NA,Business, 11851.72, 60,  280.15,14.71,539,Amérique_Nord
+NA,Licence,Employé,2034.02, 858.48,NA,Education, 83705.44,300,  733.08, 9.53,619,Europe
+NA,Licence,Employé,7141.42,6391.56, 616719.48,NA,275214.26,NA, 5327.06,NA,344,Europe
+44,Licence,Entrepreneur,6680.61,2781.96,  18995.26,Automobile,330172.62, 36,12096.14,18.96,376,Asie
+NA,Secondaire,Employé,NA,2468.70, 269382.17,Business,106376.83,240, 2519.83,NA,NA,Afrique
+46,Secondaire,Employé,3477.16,2959.42, 128488.47,Automobile,304359.38, 12,28911.35,24.89,NA,Asie
+56,NA,NA, 500.00, 162.68,  52695.49,Immobilier,445617.48,120, 6115.70,10.91,597,Asie
+25,Licence,NA,NA,1779.83,  25132.29,Business, 65312.55,300,  338.64, 3.83,589,Amérique_Nord
+48,Autre,NA,2767.46,NA,  87603.12,Automobile,103826.82,NA,NA,NA,449,Amérique_Nord
+31,Master,Étudiant,2361.78, 720.48, 270982.27,Education, 44116.17,360, 1024.13,27.85,792,Afrique
+27,Licence,Sans_Emploi,4862.46,2346.82, 114903.03,Business, 14755.62,180,NA,20.24,743,Afrique
+61,Secondaire,Étudiant,5723.15,3225.41,NA,Automobile,NA,360, 3246.55,18.54,639,Asie
+52,Secondaire,Entrepreneur,2301.91,1463.39,NA,Business,348219.50, 36,10489.69,NA,NA,Amérique_Nord
+47,Licence,Employé,2126.20, 811.74,   3194.33,Automobile,497276.37,180, 5444.60,10.33,741,Amérique_Nord
+27,Licence,Employé,5653.76,4158.22, 152195.70,Business,480200.11,300,11124.26,27.77,330,Afrique
+NA,NA,Étudiant,1824.42, 982.84,  49224.37,Automobile,378240.60, 60,NA,12.37,713,Amérique_Nord
+45,Master,Employé,6080.10,4503.61, 467001.55,Education, 95914.77, 12, 8623.65,14.26,633,Europe
+27,Doctorat,NA,6679.73,2284.41, 132274.04,Immobilier,NA,240, 1681.46, 8.59,NA,Europe
+42,Secondaire,Entrepreneur, 500.00, 167.58,  55349.76,Automobile,375032.86, 36,14533.06,23.08,741,Asie
+50,Secondaire,Employé,NA,1697.27, 157453.13,Automobile,NA, 12,22911.21,10.49,724,Afrique
+36,Secondaire,NA,2836.59, 930.31,NA,Business,NA, 36,10764.47,28.07,572,Europe
+22,NA,Entrepreneur,4033.89,2385.25, 225218.86,Business,358165.78,NA, 2203.73,NA,NA,Asie
+26,Master,Employé,3657.55,3150.16, 374527.35,Automobile,224665.29,180, 4416.16,22.79,492,Afrique
+26,Secondaire,Employé,1225.25, 771.77,NA,Business,236891.64,300, 4945.42,25.00,755,Europe

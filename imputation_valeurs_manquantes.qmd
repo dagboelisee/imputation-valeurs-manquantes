@@ -1,0 +1,364 @@
+---
+title: "Gestion des valeurs manquantes : comparaison de méthodes d'imputation sur données financières"
+author: "DAGBO Elisée & Ly Néné Gallé"
+lang: fr
+format:
+  pdf:
+    toc: true
+    toc-title: "Sommaire"
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(tidyverse)
+library(naniar)
+library(vcd)
+library(corrplot)
+library(missMDA)
+library(mice)
+library(knitr)
+
+set.seed(123)
+```
+
+# Introduction
+
+Dans les bases réelles, les valeurs manquantes sont fréquentes (non-réponses, erreurs de collecte). Les ignorer ou les traiter à la légère peut biaiser les statistiques et réduire la puissance des analyses.
+
+L'objectif de ce travail est de **comparer plusieurs méthodes d'imputation** sur des données financières d'emprunteurs. Comme la base d'origine est complète, nous y avons supprimé aléatoirement des valeurs. Nous connaissons donc les vraies valeurs et pouvons **mesurer directement l'erreur commise par chaque méthode**.
+
+Le plan est le suivant : présentation des données, analyse descriptive de la base avec valeurs manquantes, mise en œuvre de trois méthodes d'imputation, puis évaluation et comparaison à partir des vraies valeurs.
+
+# Données
+
+```{r import}
+vraies <- read_csv("data/DATA.csv", show_col_types = FALSE)
+na_data <- read_csv("data/data_na_final.csv", show_col_types = FALSE)
+
+vars_quali  <- c("Niveau_Education", "Statut_Emploi", "Type_Pret", "Region")
+vars_quanti <- setdiff(names(vraies), vars_quali)
+vars_quali_na <- setdiff(vars_quali, "Region")
+
+vraies <- vraies |> mutate(across(all_of(vars_quali), as.factor))
+na_data <- na_data |>
+  mutate(across(all_of(vars_quali),
+                ~ factor(.x, levels = levels(vraies[[cur_column()]]))))
+
+coherent <- all(sapply(names(vraies), function(v) {
+  i <- !is.na(na_data[[v]])
+  all(as.character(vraies[[v]][i]) == as.character(na_data[[v]][i]))
+}))
+taux_global <- mean(is.na(na_data))
+taux_hors_region <- mean(is.na(select(na_data, -Region)))
+```
+
+La base (source Kaggle) contient `r nrow(vraies)` individus et `r ncol(vraies)` variables : `r length(vars_quanti)` quantitatives (âge, revenu mensuel, dépenses mensuelles, épargne, montant, durée, mensualité et taux du prêt, score de crédit) et `r length(vars_quali)` qualitatives (niveau d'éducation, statut d'emploi, type de prêt, région). Elle ne contient aucune valeur manquante. Le jeu de données semble synthétique : les résultats sont à lire comme une **illustration de méthode**.
+
+## Création des valeurs manquantes
+
+Nous avons supprimé aléatoirement 15 % des cellules de la base, en épargnant la variable `Region`, qui sert de variable de regroupement. La base obtenue est `data_na_final.csv`.
+
+```{r creation-na, eval=FALSE, echo=TRUE}
+# Code utilisé pour générer les NA (non exécuté ici : la base obtenue est fournie)
+data_na <- vraies
+n_total      <- nrow(data_na) * ncol(data_na)
+n_cellules   <- nrow(data_na) * ncol(data_na[, -13])
+n_na         <- round(n_total * 0.15)
+
+set.seed(123)
+indices <- sample(n_cellules, n_na)
+
+matrice_na <- as.matrix(data_na)
+matrice_na[, -13][indices] <- NA
+write_csv(as.data.frame(matrice_na), "data/data_na_final.csv")
+```
+
+Vérifications faites sur les fichiers fournis : les cellules non manquantes de `data_na_final.csv` sont identiques à celles de `DATA.csv` (**`r ifelse(coherent, "oui", "non")`**). La proportion de valeurs manquantes est de **`r round(100 * taux_global, 1)` %** sur l'ensemble des colonnes et de **`r round(100 * taux_hors_region, 1)` %** hors `Region`.
+
+# Analyse descriptive de la base avec valeurs manquantes
+
+## Structure des valeurs manquantes
+
+```{r na-resume}
+miss_var_summary(na_data) |>
+  mutate(pct_miss = round(pct_miss, 1)) |>
+  kable(col.names = c("Variable", "Nb NA", "% NA"),
+        caption = "Valeurs manquantes par variable")
+```
+
+```{r na-upset}
+#| fig-height: 5
+gg_miss_upset(na_data, nsets = 12, nintersects = 15)
+```
+
+```{r na-lignes}
+nb_na_ligne <- rowSums(is.na(na_data))
+tab_lignes <- table(nb_na_ligne)
+kable(data.frame(`Nombre de NA par ligne` = names(tab_lignes),
+                 `Nombre de lignes` = as.integer(tab_lignes),
+                 check.names = FALSE),
+      caption = "Répartition des lignes selon leur nombre de valeurs manquantes")
+```
+
+Toutes les variables, sauf `Region`, contiennent des valeurs manquantes, souvent plusieurs par ligne. La ligne la plus touchée en compte **`r max(nb_na_ligne)`** sur 13, donc aucune ligne n'est vide : toutes les observations restent exploitables pour l'imputation.
+
+## Variables qualitatives
+
+```{r quali}
+#| fig-height: 5
+na_data |>
+  select(all_of(vars_quali)) |>
+  pivot_longer(everything(), names_to = "variable", values_to = "modalite") |>
+  filter(!is.na(modalite)) |>
+  count(variable, modalite) |>
+  ggplot(aes(x = modalite, y = n, fill = modalite)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ variable, scales = "free_x") +
+  scale_fill_viridis_d(option = "D", end = 0.9) +
+  labs(x = NULL, y = "Effectif (hors NA)") +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+## Variables quantitatives
+
+```{r quanti}
+#| fig-height: 7
+na_data |>
+  select(all_of(vars_quanti)) |>
+  pivot_longer(everything(), names_to = "variable", values_to = "valeur") |>
+  ggplot(aes(x = valeur)) +
+  geom_histogram(bins = 25, fill = "steelblue", color = "white", na.rm = TRUE) +
+  facet_wrap(~ variable, scales = "free") +
+  scale_x_continuous(guide = guide_axis(check.overlap = TRUE)) +
+  labs(x = NULL, y = "Fréquence") +
+  theme_light()
+```
+
+Les variables financières (épargne, mensualité, dépenses) sont asymétriques à droite, alors que l'âge, le score de crédit et le taux d'intérêt sont répartis de façon plus homogène. Ces valeurs élevées sont **conservées** : elles sont économiquement plausibles et, surtout, supprimer des lignes avant imputation fausserait la comparaison avec les vraies valeurs.
+
+## Liens entre variables
+
+C'est ce qui conditionne l'intérêt des méthodes « multivariées » : une variable ne peut être bien reconstituée que si elle est liée aux autres.
+
+```{r spearman}
+#| fig-height: 5
+corr_mat <- cor(na_data[vars_quanti], method = "spearman", use = "pairwise.complete.obs")
+corrplot(corr_mat, method = "number", type = "upper",
+         col = colorRampPalette(c("red", "white", "blue"))(200),
+         number.cex = 0.6, tl.cex = 0.7, tl.col = "black")
+
+fortes <- as.data.frame(as.table(corr_mat)) |>
+  filter(as.character(Var1) < as.character(Var2)) |>
+  arrange(desc(abs(Freq))) |>
+  slice_head(n = 5)
+```
+
+Les liens les plus forts sont : `r paste0(fortes$Var1, " / ", fortes$Var2, " (", round(fortes$Freq, 2), ")", collapse = " ; ")`. À l'inverse, le score de crédit et l'âge sont pratiquement indépendants des autres variables.
+
+```{r cramer}
+v_cramer <- outer(vars_quali, vars_quali, Vectorize(function(a, b) {
+  if (a == b) return(1)
+  assocstats(table(na_data[[a]], na_data[[b]]))$cramer
+}))
+dimnames(v_cramer) <- list(vars_quali, vars_quali)
+kable(round(v_cramer, 2), caption = "V de Cramér entre variables qualitatives")
+```
+
+Les variables qualitatives sont peu associées entre elles : les imputer à partir des autres variables sera difficile.
+
+# Méthodes d'imputation
+
+Trois méthodes, de la plus simple à la plus élaborée, sont appliquées à **toutes** les variables pour pouvoir les comparer sur le même terrain.
+
+## Méthode A : médiane et mode par région
+
+Chaque valeur manquante est remplacée par la **médiane** de sa région (variables quantitatives) ou par le **mode** de sa région (variables qualitatives). La médiane est préférée à la moyenne car de nombreuses distributions sont asymétriques.
+
+```{r methode-a}
+#| echo: true
+mode_stat <- function(x) {
+  x <- x[!is.na(x)]
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+
+imp_A <- na_data |>
+  group_by(Region) |>
+  mutate(across(all_of(vars_quanti), ~ replace_na(.x, median(.x, na.rm = TRUE))),
+         across(all_of(vars_quali_na), ~ replace_na(.x, mode_stat(.x)))) |>
+  ungroup()
+```
+
+## Méthode B : imputation par analyse factorielle (FAMD)
+
+L'imputation par analyse factorielle des données mixtes (`missMDA::imputeFAMD`) reconstitue les valeurs manquantes à partir d'un nombre réduit d'axes (ici 3). Elle exploite les corrélations entre variables et traite à la fois les variables quantitatives et qualitatives.
+
+```{r methode-b}
+#| echo: true
+res_B <- imputeFAMD(as.data.frame(na_data), ncp = 3)
+imp_B <- as_tibble(res_B$completeObs)[, names(na_data)]
+```
+
+## Méthode C : imputation multiple par équations chaînées (MICE)
+
+MICE construit pour chaque variable un modèle à partir des autres, de façon itérative. On génère **5 jeux imputés** ; pour la comparaison, on retient la **moyenne** des 5 imputations (variables quantitatives) ou la **modalité la plus fréquente** (variables qualitatives).
+
+```{r methode-c}
+#| echo: true
+imp_mice <- mice(as.data.frame(na_data), m = 5, seed = 123, printFlag = FALSE)
+completes <- lapply(1:5, function(k) complete(imp_mice, k))
+
+imp_C <- na_data
+for (v in vars_quanti) {
+  i <- is.na(na_data[[v]])
+  imp_C[[v]][i] <- rowMeans(sapply(completes, function(d) d[[v]][i]))
+}
+for (v in vars_quali_na) {
+  i <- which(is.na(na_data[[v]]))
+  imp_C[[v]][i] <- factor(
+    sapply(i, function(r) {
+      tb <- table(sapply(completes, function(d) as.character(d[[v]][r])))
+      names(tb)[which.max(tb)]
+    }),
+    levels = levels(na_data[[v]]))
+}
+```
+
+Aucune valeur manquante ne subsiste dans les trois bases imputées :
+
+```{r verif-na}
+sapply(list(A = imp_A, B = imp_B, C = imp_C), function(d) sum(is.na(d)))
+```
+
+# Évaluation et comparaison
+
+La comparaison se fait **uniquement sur les cellules qui étaient manquantes**, en confrontant la valeur imputée à la vraie valeur.
+
+* **Variables quantitatives** : erreur quadratique moyenne normalisée, `NRMSE = RMSE / écart-type de la vraie variable`. Une valeur proche de 1 équivaut à imputer la moyenne ; plus elle est basse, meilleure est la méthode ; au-delà de 1, la méthode fait pire que la moyenne.
+* **Variables qualitatives** : taux de bonne classification, comparé à la part de la modalité majoritaire (référence « on prédit toujours la modalité la plus fréquente »).
+
+```{r evaluation}
+bases <- list("A. Médiane / mode" = imp_A, "B. FAMD" = imp_B, "C. MICE" = imp_C)
+
+res_quanti <- map_dfr(names(bases), function(nom) {
+  map_dfr(vars_quanti, function(v) {
+    i <- is.na(na_data[[v]])
+    tibble(Methode = nom, Variable = v, n_NA = sum(i),
+           NRMSE = sqrt(mean((bases[[nom]][[v]][i] - vraies[[v]][i])^2)) / sd(vraies[[v]]))
+  })
+})
+
+res_quali <- map_dfr(names(bases), function(nom) {
+  map_dfr(vars_quali_na, function(v) {
+    i <- is.na(na_data[[v]])
+    tibble(Methode = nom, Variable = v, n_NA = sum(i),
+           Precision = mean(as.character(bases[[nom]][[v]][i]) == as.character(vraies[[v]][i])),
+           Reference = max(prop.table(table(vraies[[v]]))))
+  })
+})
+```
+
+## Variables quantitatives
+
+```{r tab-quanti}
+res_quanti |>
+  mutate(NRMSE = round(NRMSE, 2)) |>
+  pivot_wider(names_from = Methode, values_from = NRMSE) |>
+  kable(caption = "NRMSE par variable et par méthode (plus bas = meilleur)")
+```
+
+```{r fig-quanti}
+#| fig-height: 5
+ggplot(res_quanti, aes(x = Variable, y = NRMSE, fill = Methode)) +
+  geom_col(position = "dodge") +
+  geom_hline(yintercept = 1, linetype = "dashed") +
+  scale_fill_viridis_d(end = 0.85) +
+  labs(x = NULL, y = "NRMSE (pointillé = imputer la moyenne)") +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "bottom")
+```
+
+## Variables qualitatives
+
+```{r tab-quali}
+res_quali |>
+  mutate(Precision = round(100 * Precision, 1), Reference = round(100 * Reference, 1)) |>
+  pivot_wider(names_from = Methode, values_from = Precision) |>
+  kable(caption = "Taux de bonne classification (%) ; Reference = part de la modalité majoritaire")
+```
+
+## Préservation de la structure des données
+
+Une bonne imputation doit aussi conserver les **distributions** et les **liens entre variables**.
+
+```{r densites}
+#| fig-height: 6
+vars_dens <- c("Revenu_Mensuel", "Epargne", "Score_Credit")
+dens <- map_dfr(vars_dens, function(v) {
+  bind_rows(
+    tibble(Variable = v, Base = "Vraies valeurs", valeur = vraies[[v]]),
+    map_dfr(names(bases), function(nom)
+      tibble(Variable = v, Base = nom, valeur = bases[[nom]][[v]]))
+  )
+})
+ggplot(dens, aes(x = valeur, color = Base)) +
+  geom_density(linewidth = 0.8) +
+  facet_wrap(~ Variable, scales = "free", ncol = 1) +
+  scale_color_viridis_d(end = 0.9) +
+  labs(x = NULL, y = "Densité") +
+  theme_light() + theme(legend.position = "bottom")
+```
+
+```{r correlations}
+paires <- list(c("Revenu_Mensuel", "Depenses_Mensuelles"),
+               c("Revenu_Mensuel", "Epargne"),
+               c("Montant_Pret", "Mensualite_Pret"))
+tab_cor <- map_dfr(paires, function(p) {
+  tibble(Paire = paste(p, collapse = " / "),
+         `Vraies valeurs` = cor(vraies[[p[1]]], vraies[[p[2]]], method = "spearman"),
+         `A. Médiane / mode` = cor(imp_A[[p[1]]], imp_A[[p[2]]], method = "spearman"),
+         `B. FAMD` = cor(imp_B[[p[1]]], imp_B[[p[2]]], method = "spearman"),
+         `C. MICE` = cor(imp_C[[p[1]]], imp_C[[p[2]]], method = "spearman"))
+})
+tab_cor |> mutate(across(where(is.numeric), ~ round(.x, 2))) |>
+  kable(caption = "Corrélations de Spearman après imputation")
+```
+
+**Lecture.** La méthode A (médiane par région) fabrique un pic artificiel au centre de la distribution (revenu, épargne, score de crédit) et **affaiblit les corrélations** (0,83 devient 0,67 pour revenu / dépenses). La méthode B (FAMD) est la plus proche des corrélations réelles pour revenu / dépenses et revenu / épargne, tandis que MICE les conserve également bien, mais renforce légèrement la corrélation revenu / dépenses (0,87 contre 0,83). Pour le score de crédit, les trois méthodes concentrent les valeurs imputées autour du centre, ce qui déforme la distribution d'origine, plutôt plate.
+
+# Conclusion
+
+```{r synthese}
+syn_quanti <- res_quanti |> group_by(Methode) |>
+  summarise(NRMSE_moyen = mean(NRMSE)) |> arrange(NRMSE_moyen)
+syn_quali <- res_quali |> group_by(Methode) |>
+  summarise(Precision_moyenne = mean(Precision), Reference = mean(Reference)) |>
+  arrange(desc(Precision_moyenne))
+nb_mieux <- res_quanti |> group_by(Variable) |>
+  slice_min(NRMSE, n = 1) |> ungroup() |> count(Methode)
+```
+
+**Variables quantitatives.** Les deux méthodes multivariées font mieux que la médiane par région : NRMSE moyen de `r round(syn_quanti$NRMSE_moyen[syn_quanti$Methode == "B. FAMD"], 2)` (FAMD) et `r round(syn_quanti$NRMSE_moyen[syn_quanti$Methode == "C. MICE"], 2)` (MICE), contre `r round(syn_quanti$NRMSE_moyen[syn_quanti$Methode == "A. Médiane / mode"], 2)` pour la médiane. FAMD et MICE sont pratiquement équivalentes en moyenne, et le gain est concentré sur les variables liées entre elles (revenu, dépenses, épargne, mensualité). Un NRMSE moyen proche de 1 signifie que, sur l'ensemble des variables, on ne fait guère mieux que d'imputer la moyenne.
+
+**Variables qualitatives.** Le taux de bonne classification moyen est de `r paste0(round(100 * syn_quali$Precision_moyenne, 1), " % (", syn_quali$Methode, ")", collapse = ", ")`, à comparer à une référence moyenne de `r round(100 * syn_quali$Reference[1], 1)` % pour la modalité majoritaire. Aucune méthode ne dépasse clairement la référence : comme les variables qualitatives sont presque indépendantes des autres (V de Cramér faibles), il n'y a pas d'information à exploiter. MICE fait même moins bien que le mode, probablement parce que ses modèles s'ajustent sur du bruit.
+
+**Lecture générale.** Une méthode multivariée (FAMD, MICE) n'est utile que lorsque les variables à reconstituer sont liées aux autres : c'est le cas du revenu, des dépenses, de l'épargne, du montant et de la mensualité du prêt (corrélations fortes en section 3.4), pas du score de crédit ni de l'âge. Pour ces dernières, on ne peut pas espérer mieux que la moyenne, et le choix de la méthode relève surtout de la préservation des distributions et des corrélations (section 5.3).
+
+**Limites.**
+
+* Les valeurs manquantes ont été créées **complètement au hasard** (MCAR), ce qui est le cas le plus favorable. Des NA liés à la valeur elle-même ou à d'autres variables poseraient davantage de difficultés.
+* Une seule base de NA a été simulée. Répéter l'expérience avec plusieurs tirages donnerait des résultats plus robustes.
+* Pour MICE, la moyenne des 5 imputations est utilisée pour comparer, ce qui est favorable à la méthode en erreur quadratique mais ne reflète pas l'incertitude liée à l'imputation.
+* La mensualité du prêt est calculable exactement à partir du montant, du taux et de la durée : une imputation qui exploiterait cette formule ferait bien mieux que les méthodes génériques testées ici. Ce n'est pas étudié dans ce travail.
+* Les données semblent synthétiques (par exemple, la mensualité du prêt est une fonction exacte du montant, du taux et de la durée, et dépasse le revenu mensuel pour une partie des emprunteurs) : les conclusions sont à prendre comme une illustration méthodologique.
+
+# Bibliographie
+
+* van Buuren, S., & Groothuis-Oudshoorn, K. (2011). *mice: Multivariate Imputation by Chained Equations in R*. Journal of Statistical Software, 45(3).
+* Josse, J., & Husson, F. (2016). *missMDA: A Package for Handling Missing Values in Multivariate Data Analysis*. Journal of Statistical Software, 70(1).
+* Kaggle. Jeu de données de profils financiers d'emprunteurs (lien exact à compléter).
